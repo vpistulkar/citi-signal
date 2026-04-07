@@ -1,0 +1,249 @@
+/* Loan Preapproval Form block – 3-step wizard, teal Next/Submit, grey Back, file upload on step 3 */
+:root {
+  --loan-preapproval-teal: #0d9488;
+  --loan-preapproval-teal-hover: #0f766e;
+  --loan-preapproval-grey: #e5e7eb;
+  --loan-preapproval-grey-border: #d1d5db;
+  --loan-preapproval-label: #374151;
+}
+
+main > .section:has(.loan-preapproval-form-block) > div {
+  background: #fff;
+}
+
+.loan-preapproval-form-block {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 2rem 1.25rem;
+  font-family: var(--body-font-family, system-ui, sans-serif);
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-heading {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+  width: 100%;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wrapper {
+  width: 100%;
+  min-width: 0;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-consent {
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 0.25rem;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-upload-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--loan-preapproval-label);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.loan-preapproval-form-block form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard.wizard {
+  display: contents;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-menu-items,
+.loan-preapproval-form-block .wizard-menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-menu-item,
+.loan-preapproval-form-block .wizard-menu-item {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--loan-preapproval-grey-border);
+  padding: 0;
+  margin: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-menu-item::before,
+.loan-preapproval-form-block .wizard-menu-item::before {
+  display: none !important;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-menu-active-item,
+.loan-preapproval-form-block .wizard-menu-active-item {
+  background: var(--loan-preapproval-teal);
+  border-color: var(--loan-preapproval-teal);
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-step-label {
+  font-size: 0.875rem;
+  color: var(--loan-preapproval-label);
+  margin: 0 1rem;
+  flex: 0 0 auto;
+  order: 2;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 0.875rem;
+  border-top: 1px solid var(--loan-preapproval-grey);
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-button-wrapper > .field-wrapper {
+  width: auto;
+  flex: 0 0 auto;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-button-prev,
+.loan-preapproval-form-block .loan-preapproval-form-wizard [id*="wizard-button-prev"] {
+  order: 1;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-button-prev button,
+.loan-preapproval-form-block .loan-preapproval-form-wizard [id*="wizard-button-prev"] button {
+  padding: 0.75rem 1.5rem;
+  background: var(--loan-preapproval-grey) !important;
+  color: var(--loan-preapproval-label) !important;
+  border: 1px solid var(--loan-preapproval-grey-border) !important;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: auto !important;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-button-next,
+.loan-preapproval-form-block .loan-preapproval-form-wizard [id*="wizard-button-next"] {
+  order: 3;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-button-wrapper > .submit-wrapper {
+  order: 3;
+  width: auto !important;
+  max-width: none;
+  flex: 0 0 auto !important;
+  margin-top: 0;
+  display: none;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .current-wizard-step.panel-wrapper:last-of-type ~ .wizard-button-wrapper > .submit-wrapper {
+  display: flex;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-button-next button,
+.loan-preapproval-form-block .loan-preapproval-form-wizard [id*="wizard-button-next"] button {
+  padding: 0.75rem 1.5rem !important;
+  background: var(--loan-preapproval-teal) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: auto !important;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-button-next button:hover,
+.loan-preapproval-form-block .loan-preapproval-form-wizard [id*="wizard-button-next"] button:hover {
+  background: var(--loan-preapproval-teal-hover) !important;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard input[type="text"],
+.loan-preapproval-form-block .loan-preapproval-form-wizard input[type="email"],
+.loan-preapproval-form-block .loan-preapproval-form-wizard select {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 1px solid var(--loan-preapproval-grey-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .field-label {
+  font-weight: 600;
+  color: var(--loan-preapproval-label);
+  font-size: 0.9375rem;
+  margin-bottom: 0.25rem;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .panel-wrapper {
+  gap: 0.875rem;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .submit-wrapper {
+  max-width: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .submit-wrapper button {
+  width: auto !important;
+  min-width: auto !important;
+  max-width: none !important;
+  padding: 0.75rem 1.5rem !important;
+  background: var(--loan-preapproval-teal) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Keep Submit same size as Back/Next when in the button row (override form.css width: 100% and col-12) */
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-button-wrapper > .submit-wrapper,
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-button-wrapper > .submit-wrapper.field-wrapper {
+  grid-column: unset;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .wizard-button-wrapper > .submit-wrapper button {
+  width: auto !important;
+  min-width: auto !important;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-wizard .submit-wrapper button:hover {
+  background: var(--loan-preapproval-teal-hover) !important;
+}
+
+.loan-preapproval-form-block .loan-preapproval-form-success-msg {
+  margin: 0 0 0.5rem 0;
+  padding: 0.75rem 1rem;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 6px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .loan-preapproval-form-block {
+    padding: 0 1rem 1.25rem;
+  }
+}

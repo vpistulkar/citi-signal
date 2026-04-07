@@ -1,0 +1,132 @@
+[
+  {
+    "id": "main",
+    "components": [
+      "section"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "accordion",
+      "action-button",
+      "button",
+      "cards",
+      "carousel",
+      "columns",
+      "contentfragment",
+      "dm-template",
+      "dynamic-media-image",
+      "fragment",
+      "hero",
+      "iframe",
+      "image",
+      "quote",
+      "teaser",
+      "text",
+      "title",
+      "video",
+      "search",
+      "separator",
+      "tabs",
+      "form",
+      "forex",
+      "embed-adaptive-form",
+      "find-a-doctor",
+      "flight-search",
+      "flights",
+      "user-registration",
+      "create-account",
+      "child-account-application",
+      "name-change-request",
+      "sign-in",
+      "transfer-funds",
+      "set-up-auto-save",
+      "membership",
+      "checkout",
+      "checkout-shipping",
+      "application-form",
+      "loan-preapproval-form",
+      "get-offer",
+      "new-account",
+      "loan-calculator",
+      "insurance",
+      "add-external",
+      "confirmation",
+      "feedback",
+      "join-us",
+      "product-card"
+    ]
+  },
+  {
+    "id": "accordion",
+    "components": [
+      "accordion-item"
+    ]
+  },
+  {
+    "id": "cards",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "action-button",
+      "button",
+      "image",
+      "text",      
+      "title",
+      "video"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tabs-item"
+    ]
+  },
+  {
+    "id": "form",
+    "components": [
+      "captcha",
+      "checkbox",
+      "checkbox-group",
+      "date-input",
+      "drop-down",
+      "email",
+      "file-input",
+      "form-accordion",
+      "form-button",
+      "form-fragment",
+      "form-image",
+      "form-modal",
+      "form-reset-button",
+      "form-submit-button",
+      "number-input",
+      "panel",
+      "password",
+      "plain-text",
+      "radio-group",
+      "rating",
+      "telephone-input",
+      "text-input",
+      "tnc",
+      "wizard",
+      "range"
+    ]
+  }
+]
