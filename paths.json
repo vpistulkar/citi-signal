@@ -1,22 +1,22 @@
 {
   "mappings": [
-    "/content/luma-site/language-masters/en:/",
-    "/content/luma-site/language-masters/en/:/en/",
-    "/content/luma-site/language-masters/fr/:/fr/",
-    "/content/luma-site/language-masters/fr:/fr",
-    "/content/luma-site/language-masters/es/:/es/",
-    "/content/luma-site/language-masters/es:/es",
-    "/content/luma-site/language-masters/ja/:/ja/",
-    "/content/luma-site/language-masters/ja:/ja",
-    "/content/luma-site/language-masters/de/:/de/",
-    "/content/luma-site/language-masters/de:/de",
-    "/content/luma-site/configuration:/.helix/config.json",
-    "/content/luma-site/metadata:/metadata.json",
-    "/content/luma-site/redirects:/redirects.json",
-    "/content/luma-site/placeholders:/placeholders.json"
+    "/content/citi-signal/language-masters/en:/",
+    "/content/citi-signal/language-masters/en/:/en/",
+    "/content/citi-signal/language-masters/fr/:/fr/",
+    "/content/citi-signal/language-masters/fr:/fr",
+    "/content/citi-signal/language-masters/es/:/es/",
+    "/content/citi-signal/language-masters/es:/es",
+    "/content/citi-signal/language-masters/ja/:/ja/",
+    "/content/citi-signal/language-masters/ja:/ja",
+    "/content/citi-signal/language-masters/de/:/de/",
+    "/content/citi-signal/language-masters/de:/de",
+    "/content/citi-signal/configuration:/.helix/config.json",
+    "/content/citi-signal/metadata:/metadata.json",
+    "/content/citi-signal/redirects:/redirects.json",
+    "/content/citi-signal/placeholders:/placeholders.json"
   ],
   "includes": [
-    "/content/luma-site/",
-    "/content/dam/luma-site/"
+    "/content/citi-signal/",
+    "/content/dam/citi-signal/"
   ]
 }
